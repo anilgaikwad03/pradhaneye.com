@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Autorefraction </title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description"
+        content="We aim to be the leading centre in the region for eye care services through excellence in our results, constant up-gradation of scientific knowledge and technology and high degree of patient and staff satisfaction">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Kalam:wght@300;400;700&family=Outfit:wght@100..900&family=Tiro+Devanagari+Marathi:ital@0;1&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./tailwind.config.js"></script>
+</head>
+
+<body
+    class="overflow-x-hidden overflow-y-scroll selection:bg-red-400 selection:text-primary bg-gradient-to-r from-accent/20 to-sky-100">
+    <my-header></my-header>
+    <ul id="sideMenu"
+        class="flex xl:hidden flex-col py-20 px-10 gap-8 fixed -right-64 top-0 bottom-0 w-64 z-50 text-lg tracking-[2px] font-primary items-center h-screen bg-white transition duration-500">
+        <div class="absolute right-6 top-6" onclick="closeMenu()">
+            <img src="./images/close-black.png" alt="" class="w-6 cursor-pointer">
+        </div>
+        <li><a href="./index.html" onclick="closeMenu()">Home</a></li>
+        <li><a href="./about.html" onclick="closeMenu()">About</a></li>
+        <li><a href="./doctors.html" onclick="closeMenu()">Doctors</a></li>
+        <li><a href="./services.html" onclick="closeMenu()">Services</a></li>
+        <li><a href="./gallery.html" onclick="closeMenu()">Gallery</a></li>
+        <li><a href="./insurance.html" onclick="closeMenu()">Insurance</a></li>
+        <li><a href="./testimonials.html" onclick="closeMenu()">Testimonials</a></li>
+        <li><a href="./contact.html" onclick="closeMenu()">Contact</a></li>
+    </ul>
+
+    <!-- about -->
+
+    <section id="about" class="relative py-20 scroll-mt-10 font-secondary">
+        <div class="container mx-auto">
+            <div class="">
+                <div class="max-lg:order-1 my-10">
+                    <p class=" text-sky-700 text-3xl mb-4 md:text-4xl lg:text-5xl tracking-[2px] font-primary font-semibold">
+                       Computerized Autorefraction  </p>
+                    <div class=" pt-2">
+                        <div class="max-w-full">
+                            <div class=" h-full bg-accent text-primary p-4 flex-col rounded">
+                                <div class=" mb-3">
+                                    <h2 class="text-xl font-medium"> Why</h2>
+                                </div>
+                                In simple terms, checking refraction is often called "checking the number." A refractive error occurs when the shape of your eye prevents light from focusing correctly on the retina, resulting in blurred vision. <br>
+                                Common types of refractive errors include:
+                                <ul class="space-y-1 text-sky-950 list-disc list-inside">
+                                    <li class="leading-relaxed">Myopia (minus number)</li>
+                                    <li class="leading-relaxed">Hypermetropia (plus number)</li>
+                                    <li class="leading-relaxed">Astigmatism (cylinder number)</li>
+                                    <li class="leading-relaxed">Presbyopia (age-related "after 40" number)</li>
+                                </ul>
+                                Accurate measurement of these errors is essential for prescribing glasses, contact lenses, or planning cataract lens implants or LASIK surgery.
+                            </div>
+                        </div>
+
+                        <div class="max-w-full">
+                            <div class=" h-full bg-secondary text-white p-4 flex-col rounded">
+                                <div class=" mb-3">
+                                    <h2 class="text-xl font-medium">What </h2>
+                                </div>
+                                 <ul class="space-y-1 text-white list-disc list-inside">
+                                    <li class="leading-relaxed">We assess refractive error using a computerized device called an autorefractor (or auto refractometer). This test determines how much correction your eyes need to see clearly. <br>
+                                        It is a quick, reliable, and non-invasive way to measure how light is bent as it enters your eyes and helps in calculating your vision prescription.
+                                    </li>
+                                    
+                                </ul>
+
+                            </div>
+                        </div>
+
+                        <div class="max-w-full">
+                            <div class=" h-full bg-accent text-primary p-4 flex-col rounded">
+                                <div class=" mb-3">
+                                    <h2 class="text-xl font-medium">How (Procedure and Mechanism)</h2>
+                                </div>
+                                We use a Topcon autorefractor, a compact and advanced machine that:
+                                <ul class="space-y-1 text-sky-950 list-disc list-inside">
+                                    <li class="leading-relaxed">Automatically measures the refractive error of the eyes.</li>
+                                    <li class="leading-relaxed">Allows the examiner to observe the patient's facial expressions during the test.</li>
+                                    <li class="leading-relaxed">Offers a tiltable design for a more natural head position, improving comfort.</li>
+                                    <li class="leading-relaxed">Provides faster results, making the examination smoother and more patient-friendly.</li>
+                                </ul>
+                                This efficient and precise technology helps ensure that your corrective prescription is accurate and tailored to your individual visual needs.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <my-footer></my-footer>
+
+    <script src="./script.js"></script>
+    <script>
+        // Disable right-click
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        }, false);
+        
+        // Disable Ctrl+U, Ctrl+Shift+I, F12, Ctrl+Shift+C
+        document.addEventListener('keydown', function(e) {
+            if (
+                e.ctrlKey && (e.key === 'u' || e.key === 'U') ||  // Ctrl+U
+                e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'C') ||  // Ctrl+Shift+I/C
+                e.key === 'F12'  // F12
+            ) {
+                e.preventDefault();
+            }
+        });
+        </script>
+</body>
+
+</html>
