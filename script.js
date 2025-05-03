@@ -50,7 +50,7 @@ class MyFooter extends HTMLElement{
     <div class="container mx-auto">
       <div class="grid max-sm:grid-cols-1 max-xl:grid-cols-2 xl:grid-cols-5 gap-8 max-w-7xl mx-auto">
         <div class="xl:col-span-2">
-          <a href="./index.html"><img src="./images/Pradhan Logo.png" alt="logo" class='w-60 rounded mb-6 p-2 bg-white' />
+          <a href="./index.html"><img src="./images/Pradhan Logo.png" alt="logo" class='w-60 mb-6 p-2 bg-white' />
           </a>
           <p class="mb-2 leading-relaxed text-white">If you are looking for the best eye specialist near you, doctors at Pradhan Eye Hospital will be a preferred choice. Our team of doctors, including optometrists, surgeons, ophthalmologists and paramedic staff, are renowned for their specialties throughout the world.</p>
         </div>
@@ -126,7 +126,7 @@ class MyFooter extends HTMLElement{
           <h4 class="text-xl font-semibold mb-6">Contact Us</h4>
           <ul class="space-y-4">
             <li>Pradhan Eye Hospital, <br> 50, Railway lines, <br> Dr. M.G. Pradhan marg, Solapur - 413001</li>
-            <li>pradhaneye@gmail.com <br> +91-9881004304</li>
+            <li>pradhaneye@gmail.com <br> 9881004304 / 7058659342</li>
           </ul>
         </div>
       </div>
