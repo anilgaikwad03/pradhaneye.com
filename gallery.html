@@ -23,6 +23,7 @@
 
 <body class="overflow-x-hidden overflow-y-scroll selection:bg-red-400 selection:text-primary">
   <my-header></my-header>
+  
   <ul id="sideMenu"
     class="flex xl:hidden flex-col py-20 px-10 gap-8 fixed -right-64 top-0 bottom-0 w-64 z-50 text-lg tracking-[2px] font-primary items-center h-screen bg-white transition duration-500">
     <div class="absolute right-6 top-6" onclick="closeMenu()">
@@ -32,10 +33,10 @@
     <li><a href="./about.html" onclick="closeMenu()">About</a></li>
     <li><a href="./doctors.html" onclick="closeMenu()">Doctors</a></li>
     <li><a href="./services.html" onclick="closeMenu()">Services</a></li>
-    <li><a href="./awards.html" onclick="closeMenu()">Awards</a></li>
     <li><a href="./gallery.html" onclick="closeMenu()">Gallery</a></li>
     <li><a href="./insurance.html" onclick="closeMenu()">Insurance</a></li>
     <li><a href="./testimonials.html" onclick="closeMenu()">Testimonials</a></li>
+    <li><a href="./contact.html" onclick="closeMenu()">Contact</a></li>
   </ul>
 
 
@@ -95,6 +96,23 @@
 
   <my-footer></my-footer>
   <script src="./script.js"></script>
+  <script>
+    // Disable right-click
+    document.addEventListener('contextmenu', function(e) {
+        e.preventDefault();
+    }, false);
+    
+    // Disable Ctrl+U, Ctrl+Shift+I, F12, Ctrl+Shift+C
+    document.addEventListener('keydown', function(e) {
+        if (
+            e.ctrlKey && (e.key === 'u' || e.key === 'U') ||  // Ctrl+U
+            e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'C') ||  // Ctrl+Shift+I/C
+            e.key === 'F12'  // F12
+        ) {
+            e.preventDefault();
+        }
+    });
+    </script>
 </body>
 
 </html>
