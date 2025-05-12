@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>Best Eye Hospital in Solapur | Top Eye Hospital in Solapur</title>
   <meta charset="UTF-8">
@@ -21,14 +22,18 @@
   <script src="./tailwind.config.js"></script>
 </head>
 
-<body
-  class="overflow-x-hidden overflow-y-scroll selection:bg-red-400 selection:text-primary">
+<body class="overflow-x-hidden overflow-y-scroll selection:bg-red-400 selection:text-primary">
   <my-header></my-header>
   <ul id="sideMenu"
-    class="flex xl:hidden flex-col py-20 px-10 gap-8 fixed -right-64 top-0 bottom-0 w-64 z-50 text-lg tracking-[2px] font-primary items-center h-screen bg-white transition duration-500">
-    <div class="absolute right-6 top-6" onclick="closeMenu()">
-      <img src="./images/close-black.png" alt="" class="w-6 cursor-pointer">
-    </div>
+  class="flex xl:hidden flex-col justify-between py-20 px-10 gap-8 fixed -right-64 top-0 bottom-0 w-64 z-50 text-lg tracking-[2px] font-primary items-center h-screen bg-white transition duration-500">
+
+  <!-- Close button -->
+  <div class="absolute right-6 top-6" onclick="closeMenu()">
+    <img src="./images/close-black.png" alt="Close menu" class="w-6 cursor-pointer">
+  </div>
+
+  <!-- Navigation links -->
+  <nav class="flex flex-col items-center gap-6 w-full">
     <li><a href="./index.html" onclick="closeMenu()">Home</a></li>
     <li><a href="./about.html" onclick="closeMenu()">About</a></li>
     <li><a href="./doctors.html" onclick="closeMenu()">Doctors</a></li>
@@ -37,7 +42,20 @@
     <li><a href="./insurance.html" onclick="closeMenu()">Insurance</a></li>
     <li><a href="./testimonials.html" onclick="closeMenu()">Testimonials</a></li>
     <li><a href="./contact.html" onclick="closeMenu()">Contact</a></li>
-  </ul>
+  </nav>
+
+  <!-- Contact information -->
+  <div class="text-center text-sm font-secondary text-gray-700 mt-10">
+    <img src="./images/pradhan-nabh-logo.png" alt="Pradhan Eye Hospital Logo" class="w-48 mb-2">
+    50, Railway Lines<br>
+    Dr. M.G. Pradhan Marg<br>
+    Solapur - 413001<br>
+    <a href="mailto:pradhaneye@gmail.com" class="block mt-2 text-blue-600 underline">pradhaneye@gmail.com</a>
+    <a href="https://wa.me/919881004304" target="_blank" class="block mt-1 text-green-600 underline">
+      WhatsApp:9881004304
+    </a>
+  </div>
+</ul>
 
   <!-- about -->
 
@@ -48,7 +66,8 @@
           <p
             class="text-center text-sky-700 text-3xl md:text-4xl lg:text-5xl tracking-[2px] font-primary font-semibold">
             Pradhan Eye Hospital & Lasik Laser Center</p>
-          <p class="text-sky-600 text-sm md:text-lg mt-2 font-semibold font-secondary uppercase">Where your vision is restored
+          <p class="text-sky-600 text-center text-sm md:text-lg mt-2 font-semibold font-secondary uppercase">Where your
+            vision is restored
             with the best modern technology </p>
 
           <div class=" flex flex-wrap justify-center pt-4">
@@ -113,33 +132,39 @@
             </div>
           </div>
 
-          <div class="grid  grid-cols-1 md:grid-cols-3 p-2 gap-4">
-            <div>
-              <img src="./images/Gallery/00.jpg" alt="">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 p-4">
+            <!-- Image Section -->
+            <div class="flex justify-center">
+              <img src="./images/Gallery/00.jpg" alt="Pradhan Eye Hospital"
+                class="rounded-lg shadow-md max-w-full h-auto">
             </div>
-            <div class="col-span-2">
-              <p class="text-justify text-xl leading-relaxed my-4"> Pradhan Eye Hospital & Lasik Laser Center Founded in 1985 by Dr. Uma Pradhan</p>
-              <p class="text-justify text-lg leading-relaxed my-4"> Pradhan Eye Hospital began as a modest three-room clinic and has grown into a modern, spacious, <a href="./images/NABH Certificate Of Accreditation -38333.pdf" target="_blank" class="text-sky-700 uppercase underline underline-offset-2 font-semibold"> NABH-accredited</a> Eye Hospital offering comprehensive eye care under one roof. Dr. Uma Pradhan performed Solapur’s first intraocular lens (IOL) implant, marking a significant milestone in the city’s ophthalmic history. Our commitment to excellence has driven us to continually adopt the latest technologies and expand our facilities, ensuring state-of-the-art treatments at affordable costs. We offer a full spectrum of diagnostic and therapeutic services, including advanced laser technologies for accurate diagnosis, effective treatment, and thorough follow-up of various eye conditions. </p>
-              <p class="text-justify text-lg leading-relaxed mt-4"> Our dedicated eye bank brings hope to patients suffering from corneal blindness, and in 2013, we enhanced our refractive surgery offerings by introducing the cutting-edge Amaris 200e Excimer Laser—one of the best technologies available in vision correction. </p>
-            </div>
-          </div>
 
-          <div class="flex flex-wrap gap-8 pt-10 justify-center">
-            <div class="max-w-[330px] bg-accent rounded">
-              <iframe width="330" height="315" src="https://www.youtube.com/embed/1VK6VgFt9BY?si=H79-3ZyXZqAYo_qw"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-              <p class="p-2 text-center">Watch Dr. Uma Pradhan's Interview on Zee 24 Taas Hitguj | Refrective Eye Surgery To
-                Eliminate Glasses | 29th March 2017</p>
-            </div>
-    
-            <div class="max-w-[330px] bg-accent rounded">
-              <iframe width="330" height="315" src="https://www.youtube.com/embed/QF3YY3Jk6A0?si=mZj36qWtIyEeQOF1"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-              <p class="p-2 text-center">Watch Dr. Uma Pradhan's Interview Health Time Dr Uma Pradhan | In Solapur News</p>
+            <!-- Content Section -->
+            <div class="md:col-span-2 space-y-2">
+              <p class="text-lg text-justify leading-relaxed">
+                <strong>Pradhan Eye Hospital & LASIK Laser Center</strong> was founded in 1985 by Dr. Uma Pradhan.
+              </p>
+
+              <p class="text-lg text-justify leading-relaxed">
+                What began as a modest three-room clinic has transformed into a modern, spacious,
+                <a href="./images/NABH Certificate Of Accreditation -38333.pdf" target="_blank"
+                  class="text-sky-700 uppercase underline underline-offset-2 font-semibold">NABH-accredited</a>
+                eye hospital offering comprehensive eye care services. Dr. Pradhan performed Solapur’s first intraocular
+                lens (IOL) implant, a significant milestone in the city’s ophthalmic history.
+              </p>
+
+              <p class="text-lg text-justify leading-relaxed">
+                Our continuous commitment to excellence drives us to adopt the latest technologies and expand our
+                facilities. We provide a full spectrum of diagnostic and therapeutic services with advanced laser
+                technologies, ensuring accurate diagnosis, effective treatment, and complete follow-up for various eye
+                conditions.
+              </p>
+
+              <p class="text-lg text-justify leading-relaxed">
+                Our dedicated eye bank brings hope to patients with corneal blindness. In 2013, we introduced the
+                cutting-edge Amaris 200e Excimer Laser, elevating our refractive surgery offerings with one of the best
+                vision correction technologies available.
+              </p>
             </div>
           </div>
         </div>
@@ -158,16 +183,14 @@
           focus and patients well being will be our sole interest.</p>
       </div>
       <div class="mx-auto grid md:grid-cols-2 gap-4 my-2">
-        <div
-          class="text-black bg-secondary/10 border-2 border-sky-700 p-4 rounded hover:-translate-x-2 duration-500 ">
+        <div class="text-black bg-secondary/10 border-2 border-sky-700 p-4 rounded hover:-translate-x-2 duration-500 ">
           <img src="./images/about/vision.png" class="w-20 h-20 mb-4 inline-block p-2 rounded-md"> </img>
           <h3 class="text-2xl font-bold mb-2 text-sky-700 font-secondary">Vision</h3>
           <p class="font-secondary">We aim to be the leading centre in the region for eye care services through
             excellence in our results, constant up-gradation of scientific knowledge and technology and high degree of
             patient and staff satisfaction.</p>
         </div>
-        <div
-          class="text-black bg-secondary/10 border-2 border-sky-700 p-4 rounded hover:-translate-x-2 duration-500 ">
+        <div class="text-black bg-secondary/10 border-2 border-sky-700 p-4 rounded hover:-translate-x-2 duration-500 ">
           <img src="./images/about/value.png" class="w-20 h-20 mb-4 inline-block p-2 rounded-md""> </img>
         <h3 class=" text-2xl font-bold mb-2 text-sky-700 font-secondary">Values</h3>
           <p>
@@ -182,10 +205,12 @@
           </p>
         </div>
       </div>
-      <p class="text-center text-sky-800 text-3xl md:text-4xl lg:text-5xl tracking-[2px] font-primary font-semibold mt-20">
+
+      <p
+        class="text-center text-sky-800 text-3xl md:text-4xl lg:text-5xl tracking-[2px] font-primary font-semibold mt-20">
         Our Facilities
       </p>
-      
+
       <div class="grid md:grid-cols-3 lg:grid-cols-4 gap-4 max-sm:justify-center mt-12 max-sm:max-w-xs mx-auto">
         <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm">
           <a href="#">
@@ -195,7 +220,8 @@
             <a href="#">
               <h5 class="mb-2 text-xl font-bold text-gray-900"> Schwind Amaris 500E Eximer Laser Germany</h5>
             </a>
-            <p class="font-normal text-gray-700 dark:text-gray-400">The innovative SCHWIND AMARIS laser systems set the worldwide standard in precision, safety, speed and convenience.</p>
+            <p class="font-normal text-gray-700 dark:text-gray-400">The innovative SCHWIND AMARIS laser systems set the
+              worldwide standard in precision, safety, speed and convenience.</p>
           </div>
         </div>
         <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm">
@@ -206,7 +232,8 @@
             <a href="#">
               <h5 class="mb-2 text-xl font-bold text-gray-900"> Centurion Vision System Alcon </h5>
             </a>
-            <p class="font-normal text-gray-700 dark:text-gray-400">The Centurion Vision System is Alcon's advanced cataract surgery device, for the first time in solapur</p>
+            <p class="font-normal text-gray-700 dark:text-gray-400">The Centurion Vision System is Alcon's advanced
+              cataract surgery device, for the first time in solapur</p>
           </div>
         </div>
         <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm">
@@ -217,7 +244,8 @@
             <a href="#">
               <h5 class="mb-2 text-xl font-bold text-gray-900"> Yellow laser -multispot 577 nm Quantel, France</h5>
             </a>
-            <p class="font-normal text-gray-700 dark:text-gray-400">A 577nm yellow laser system for efficient and safe peripheral and macular photocoagulation using multispot modes.</p>
+            <p class="font-normal text-gray-700 dark:text-gray-400">A 577nm yellow laser system for efficient and safe
+              peripheral and macular photocoagulation using multispot modes.</p>
           </div>
         </div>
         <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm">
@@ -228,7 +256,8 @@
             <a href="#">
               <h5 class="mb-2 text-xl font-bold text-gray-900">SBM Ocular Surface Analyser </h5>
             </a>
-            <p class="font-normal text-gray-700 dark:text-gray-400">The SBM Ocular Surface Analyzer is a non-invasive diagnostic device used to assess primarily for dry eye evaluation.</p>
+            <p class="font-normal text-gray-700 dark:text-gray-400">The SBM Ocular Surface Analyzer is a non-invasive
+              diagnostic device used to assess primarily for dry eye evaluation.</p>
           </div>
         </div>
         <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm">
@@ -239,7 +268,8 @@
             <a href="#">
               <h5 class="mb-2 text-xl font-bold text-gray-900">Topcon TRC 50 EX</h5>
             </a>
-            <p class="font-normal text-gray-700 dark:text-gray-400">Used to take fundus photographs. Can do fluorescein angiography in diagnosis of different retinal diseases.</p>
+            <p class="font-normal text-gray-700 dark:text-gray-400">Used to take fundus photographs. Can do fluorescein
+              angiography in diagnosis of different retinal diseases.</p>
           </div>
         </div>
         <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm">
@@ -250,7 +280,8 @@
             <a href="#">
               <h5 class="mb-2 text-xl font-bold text-gray-900">Corneal Topography </h5>
             </a>
-            <p class="font-normal text-gray-700 dark:text-gray-400">Offers detailed information regarding corneal thickness and comprehensive support for corneal diagnosis.</p>
+            <p class="font-normal text-gray-700 dark:text-gray-400">Offers detailed information regarding corneal
+              thickness and comprehensive support for corneal diagnosis.</p>
           </div>
         </div>
         <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm">
@@ -261,7 +292,8 @@
             <a href="#">
               <h5 class="mb-2 text-xl font-bold text-gray-900">CIRRUS HD-OCT </h5>
             </a>
-            <p class="font-normal text-gray-700 dark:text-gray-400">High Resolution Tomography for various macular disorders and Glaucoma Diagnostics</p>
+            <p class="font-normal text-gray-700 dark:text-gray-400">High Resolution Tomography for various macular
+              disorders and Glaucoma Diagnostics</p>
           </div>
         </div>
         <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm">
@@ -272,7 +304,8 @@
             <a href="#">
               <h5 class="mb-2 text-xl font-bold text-gray-900">Yag Laser</h5>
             </a>
-            <p class="font-normal text-gray-700 dark:text-gray-400">Used for yag capsulotomy Also used for yag iridotomy in angle closure glaucoma.</p>
+            <p class="font-normal text-gray-700 dark:text-gray-400">Used for yag capsulotomy Also used for yag iridotomy
+              in angle closure glaucoma.</p>
           </div>
         </div>
         <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm">
@@ -283,7 +316,8 @@
             <a href="#">
               <h5 class="mb-2 text-xl font-bold text-gray-900">IOL Master 700</h5>
             </a>
-            <p class="font-normal text-gray-700 dark:text-gray-400">High-precision optical biometer for accurate cataract surgery planning and IOL power calculation</p>
+            <p class="font-normal text-gray-700 dark:text-gray-400">High-precision optical biometer for accurate
+              cataract surgery planning and IOL power calculation</p>
           </div>
         </div>
         <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm">
@@ -294,7 +328,8 @@
             <a href="#">
               <h5 class="mb-2 text-xl font-bold text-gray-900">Perimeter</h5>
             </a>
-            <p class="font-normal text-gray-700 dark:text-gray-400">providing comprehensive visual field analysis and patient management capabilities</p>
+            <p class="font-normal text-gray-700 dark:text-gray-400">providing comprehensive visual field analysis and
+              patient management capabilities</p>
           </div>
         </div>
         <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm">
@@ -305,63 +340,94 @@
             <a href="#">
               <h5 class="mb-2 text-xl font-bold text-gray-900">Lumera I (Zeiss)</h5>
             </a>
-            <p class="font-normal text-gray-700 dark:text-gray-400">premium ophthalmic microscope with advanced illumination and optics for precision eye surgery.</p>
+            <p class="font-normal text-gray-700 dark:text-gray-400">premium ophthalmic microscope with advanced
+              illumination and optics for precision eye surgery.</p>
           </div>
         </div>
       </div>
+
+
+      <!-- Reviews -->
+
+      <div class="relative h-full py-10">
+        <div class="container mx-auto p-2">
+          <p
+            class="text-center text-sky-700 text-3xl md:text-4xl lg:text-5xl tracking-[2px] font-primary font-semibold my-10">
+            Reviews & Testimonials </p>
+          <div class="text-center">
+            <div class="font-secondary">
+
+              <div class="tagembed-widget" style="width:100%;height:100%" data-widget-id="2167478" data-tags="false"
+                view-url="https://widget.tagembed.com/2167478"></div>
+              <script src="https://widget.tagembed.com/embed.min.js" type="text/javascript"></script>
+              <a href="./testimonials.html"
+                class=" font-secondary mt-10 py-2 px-6 gap-2 bg-black text-white rounded inline-flex items-center">
+                <span> View More </span>
+                <svg class="w-4" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                  stroke-width="2" viewBox="0 0 24 24" class="w-6 h-6 ml-2">
+                  <path d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
+
 
   <div class="flex flex-col items-center p-6 bg-gray-50 rounded-xl shadow-md">
     <h1 class="text-2xl font-semibold text-gray-700 mb-4">Follow Us</h1>
     <div class="flex flex-wrap justify-center gap-4 sm:gap-6">
-  
+
       <!-- Facebook -->
       <a href="https://www.facebook.com/pradhaneye/" target="_blank" aria-label="Facebook"
-         class="flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-blue-100 text-blue-600 hover:bg-blue-200 transition">
+        class="flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-blue-100 text-blue-600 hover:bg-blue-200 transition">
         <i class="fab fa-facebook-f text-xl sm:text-xl"></i>
       </a>
-  
+
       <!-- Instagram -->
       <a href="https://www.instagram.com/pradhan_eye_hospital/" target="_blank" aria-label="Instagram"
-         class="flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-pink-100 text-pink-500 hover:bg-pink-200 transition">
+        class="flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-pink-100 text-pink-500 hover:bg-pink-200 transition">
         <i class="fab fa-instagram text-xl sm:text-2xl"></i>
       </a>
-  
+
       <!-- WhatsApp -->
       <a href="https://wa.me/919881004304" target="_blank" aria-label="WhatsApp"
-         class="flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-green-100 text-green-500 hover:bg-green-200 transition">
+        class="flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-green-100 text-green-500 hover:bg-green-200 transition">
         <i class="fab fa-whatsapp text-xl sm:text-2xl"></i>
       </a>
-  
+
       <!-- YouTube -->
       <a href="https://www.youtube.com/@pradhaneyehospital476" target="_blank" aria-label="YouTube"
-         class="flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-red-100 text-red-500 hover:bg-red-200 transition">
+        class="flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-red-100 text-red-500 hover:bg-red-200 transition">
         <i class="fab fa-youtube text-xl sm:text-2xl"></i>
       </a>
-  
+
     </div>
   </div>
-  
+
   <my-footer></my-footer>
 
   <script src="./script.js"></script>
   <script>
     // Disable right-click
-    document.addEventListener('contextmenu', function(e) {
-        e.preventDefault();
+    document.addEventListener('contextmenu', function (e) {
+      e.preventDefault();
     }, false);
-    
+
     // Disable Ctrl+U, Ctrl+Shift+I, F12, Ctrl+Shift+C
-    document.addEventListener('keydown', function(e) {
-        if (
-            e.ctrlKey && (e.key === 'u' || e.key === 'U') ||  // Ctrl+U
-            e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'C') ||  // Ctrl+Shift+I/C
-            e.key === 'F12'  // F12
-        ) {
-            e.preventDefault();
-        }
+    document.addEventListener('keydown', function (e) {
+      if (
+        e.ctrlKey && (e.key === 'u' || e.key === 'U') ||  // Ctrl+U
+        e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'C') ||  // Ctrl+Shift+I/C
+        e.key === 'F12'  // F12
+      ) {
+        e.preventDefault();
+      }
     });
-    </script>
+  </script>
 </body>
+
 </html>
