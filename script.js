@@ -138,9 +138,11 @@ class MyFooter extends HTMLElement{
       
     <hr class="my-4 h-1 w-full bg-accent" />
     <div>
-      <p class='text-center m-4 text-white'>Pradhan Eye Hospital | Copyright © 2025 | All Rights Reserved | Website Design by <a href='https://www.evolveweb.in/' target="_blank" class="hover:underline text-sky-300 font-secondary"> Evolve Web Solapur</a></p>
+      <p class="text-center m-4 text-white">
+      © 2025 Pradhan Eye Hospital. All Rights Reserved. Design by 
+      <a href="https://www.evolveweb.in/" target="_blank" class="hover:underline text-sky-300 font-secondary">Evolve Web Solapur</a>
+      </p>
     </div>
-
   </footer>
 
 `
