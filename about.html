@@ -25,37 +25,37 @@
 <body class="overflow-x-hidden overflow-y-scroll selection:bg-red-400 selection:text-primary">
   <my-header></my-header>
   <ul id="sideMenu"
-  class="flex xl:hidden flex-col justify-between py-20 px-10 gap-8 fixed -right-64 top-0 bottom-0 w-64 z-50 text-lg tracking-[2px] font-primary items-center h-screen bg-white transition duration-500">
+    class="flex xl:hidden flex-col justify-between py-20 px-10 gap-8 fixed -right-64 top-0 bottom-0 w-64 z-50 text-lg tracking-[2px] font-primary items-center h-screen bg-white transition duration-500">
 
-  <!-- Close button -->
-  <div class="absolute right-6 top-6" onclick="closeMenu()">
-    <img src="./images/close-black.png" alt="Close menu" class="w-6 cursor-pointer">
-  </div>
+    <!-- Close button -->
+    <div class="absolute right-6 top-6" onclick="closeMenu()">
+      <img src="./images/close-black.png" alt="Close menu" class="w-6 cursor-pointer">
+    </div>
 
-  <!-- Navigation links -->
-  <nav class="flex flex-col items-center gap-6 w-full">
-    <li><a href="./index.html" onclick="closeMenu()">Home</a></li>
-    <li><a href="./about.html" onclick="closeMenu()">About</a></li>
-    <li><a href="./doctors.html" onclick="closeMenu()">Doctors</a></li>
-    <li><a href="./services.html" onclick="closeMenu()">Services</a></li>
-    <li><a href="./gallery.html" onclick="closeMenu()">Gallery</a></li>
-    <li><a href="./insurance.html" onclick="closeMenu()">Insurance</a></li>
-    <li><a href="./testimonials.html" onclick="closeMenu()">Testimonials</a></li>
-    <li><a href="./contact.html" onclick="closeMenu()">Contact</a></li>
-  </nav>
+    <!-- Navigation links -->
+    <nav class="flex flex-col items-center gap-6 w-full">
+      <li><a href="./index.html" onclick="closeMenu()">Home</a></li>
+      <li><a href="./about.html" onclick="closeMenu()">About</a></li>
+      <li><a href="./doctors.html" onclick="closeMenu()">Doctors</a></li>
+      <li><a href="./services.html" onclick="closeMenu()">Services</a></li>
+      <li><a href="./gallery.html" onclick="closeMenu()">Gallery</a></li>
+      <li><a href="./insurance.html" onclick="closeMenu()">Insurance</a></li>
+      <li><a href="./testimonials.html" onclick="closeMenu()">Testimonials</a></li>
+      <li><a href="./contact.html" onclick="closeMenu()">Contact</a></li>
+    </nav>
 
-  <!-- Contact information -->
-  <div class="text-center text-sm font-secondary text-gray-700 mt-10">
-    <img src="./images/pradhan-nabh-logo.png" alt="Pradhan Eye Hospital Logo" class="w-48 mb-2">
-    50, Railway Lines<br>
-    Dr. M.G. Pradhan Marg<br>
-    Solapur - 413001<br>
-    <a href="mailto:pradhaneye@gmail.com" class="block mt-2 text-blue-600 underline">pradhaneye@gmail.com</a>
-    <a href="https://wa.me/919881004304" target="_blank" class="block mt-1 text-green-600 underline">
-      WhatsApp:9881004304
-    </a>
-  </div>
-</ul>
+    <!-- Contact information -->
+    <div class="text-center text-sm font-secondary text-gray-700 mt-10">
+      <img src="./images/pradhan-nabh-logo.png" alt="Pradhan Eye Hospital Logo" class="w-48 mb-2">
+      50, Railway Lines<br>
+      Dr. M.G. Pradhan Marg<br>
+      Solapur - 413001<br>
+      <a href="mailto:pradhaneye@gmail.com" class="block mt-2 text-blue-600 underline">pradhaneye@gmail.com</a>
+      <a href="https://wa.me/919881004304" target="_blank" class="block mt-1 text-green-600 underline">
+        WhatsApp:9881004304
+      </a>
+    </div>
+  </ul>
 
   <!-- about -->
 
@@ -135,8 +135,7 @@
           <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-6">
             <!-- Image Section -->
             <div class="flex justify-center">
-              <img src="./images/Gallery/00.jpg" alt="Pradhan Eye Hospital"
-                class="rounded shadow-md max-w-full h-auto">
+              <img src="./images/Gallery/00.jpg" alt="Pradhan Eye Hospital" class="rounded shadow-md max-w-full h-auto">
             </div>
 
             <!-- Content Section -->
@@ -165,46 +164,90 @@
                 cutting-edge Amaris 200e Excimer Laser, elevating our refractive surgery offerings with one of the best
                 vision correction technologies available.
               </p>
+
+              <div class="flex flex-col items-center p-2 bg-gray-50">
+                <h1 class="text-2xl font-semibold text-gray-700 mb-4">More About Us</h1>
+                <div class="flex flex-wrap justify-center gap-4 sm:gap-6">
+
+                  <!-- Facebook -->
+                  <a href="https://www.facebook.com/pradhaneye/" target="_blank" aria-label="Facebook"
+                    class="flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-blue-100 text-blue-600 hover:bg-blue-200 transition">
+                    <i class="fab fa-facebook-f text-xl sm:text-xl"></i>
+                  </a>
+
+                  <!-- Instagram -->
+                  <a href="https://www.instagram.com/pradhan_eye_hospital/" target="_blank" aria-label="Instagram"
+                    class="flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-pink-100 text-pink-500 hover:bg-pink-200 transition">
+                    <i class="fab fa-instagram text-xl sm:text-2xl"></i>
+                  </a>
+
+                  <!-- WhatsApp -->
+                  <a href="https://wa.me/919881004304" target="_blank" aria-label="WhatsApp"
+                    class="flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-green-100 text-green-500 hover:bg-green-200 transition">
+                    <i class="fab fa-whatsapp text-xl sm:text-2xl"></i>
+                  </a>
+
+                  <!-- YouTube -->
+                  <a href="https://www.youtube.com/@pradhaneyehospital476" target="_blank" aria-label="YouTube"
+                    class="flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-red-100 text-red-500 hover:bg-red-200 transition">
+                    <i class="fab fa-youtube text-xl sm:text-2xl"></i>
+                  </a>
+
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div
-        class=" text-black bg-secondary/10 border-2 border-sky-700 p-4 mb-4 rounded hover:-translate-y-2 duration-500 ">
-        <img src="./images/about/mission.png" class="w-20 h-20 mb-4 inline-block p-2 rounded-md">
-        </img>
-        <h3 class="text-2xl font-bold mb-2 text-sky-700 font-secondary">Mission</h3>
-        <p class="font-secondary ">Pradhan Eye Hospital is committed to provide comprehensive Eye
-          care services to the patient, he emphasis being on personalized treatment of visual problems to improve the
-          vision and thereby improve overall health, well being & Lifestyle of the patient. At Pradhan Eye Hospital and
-          Lasik Laser Center our endeavor will be to provide excellent, state of art clinical care and surgical services
-          through our experience & expertise. At Pradhan Eye Hospital and Lasik Laser Center patient will be our main
-          focus and patients well being will be our sole interest.</p>
-      </div>
-      <div class="mx-auto grid md:grid-cols-2 gap-4 my-2">
-        <div class="text-black bg-secondary/10 border-2 border-sky-700 p-4 rounded hover:-translate-x-2 duration-500 ">
-          <img src="./images/about/vision.png" class="w-20 h-20 mb-4 inline-block p-2 rounded-md"> </img>
-          <h3 class="text-2xl font-bold mb-2 text-sky-700 font-secondary">Vision</h3>
-          <p class="font-secondary">We aim to be the leading centre in the region for eye care services through
-            excellence in our results, constant up-gradation of scientific knowledge and technology and high degree of
-            patient and staff satisfaction.</p>
+      <section class="max-w-6xl mx-auto px-2 py-10">
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Mission Card -->
+          <div
+            class="bg-white shadow-xl rounded-xl p-2 border-t-4 border-sky-700 transition-transform transform hover:-translate-y-2 duration-300">
+            <div class="flex items-center justify-center mb-4">
+              <img src="./images/about/mission.png" alt="Mission Icon" class="w-20 h-20 p-2 bg-sky-100 rounded-full" />
+            </div>
+            <h3 class="text-xl font-bold text-center text-sky-700 font-secondary mb-3">Mission</h3>
+            <p class="text-gray-700 font-secondary text-justify">
+              Pradhan Eye Hospital is committed to providing comprehensive eye care services with a focus on
+              personalized treatment. Our goal is to enhance vision, health, and lifestyle through expert clinical care
+              and surgical excellence.
+            </p>
+          </div>
+
+          <!-- Vision Card -->
+          <div
+            class="bg-white shadow-xl rounded-xl p-2 border-t-4 border-sky-700 transition-transform transform hover:-translate-y-2 duration-300">
+            <div class="flex items-center justify-center mb-4">
+              <img src="./images/about/vision.png" alt="Vision Icon" class="w-20 h-20 p-2 bg-sky-100 rounded-full" />
+            </div>
+            <h3 class="text-xl font-bold text-center text-sky-700 font-secondary mb-3">Vision</h3>
+            <p class="text-gray-700 font-secondary text-justify">
+              To become the leading eye care center in the region, recognized for clinical excellence, innovation, and
+              patient satisfaction by consistently upgrading our knowledge and technology.
+            </p>
+          </div>
+
+          <!-- Values Card -->
+          <div
+            class="bg-white shadow-xl rounded-xl p-2 border-t-4 border-sky-700 transition-transform transform hover:-translate-y-2 duration-300">
+            <div class="flex items-center justify-center mb-4">
+              <img src="./images/about/value.png" alt="Values Icon" class="w-20 h-20 p-2 bg-sky-100 rounded-full" />
+            </div>
+            <h3 class="text-xl font-bold text-center text-sky-700 font-secondary mb-3">Values</h3>
+            <ul class="text-gray-700 font-secondary space-y-1 list-disc list-inside">
+              <li>Concern for the patient</li>
+              <li>Transparency</li>
+              <li>Respect to the patient</li>
+              <li>Confidentiality</li>
+              <li>Ethics</li>
+              <li>Integrity</li>
+            </ul>
+          </div>
         </div>
-        <div class="text-black bg-secondary/10 border-2 border-sky-700 p-4 rounded hover:-translate-x-2 duration-500 ">
-          <img src="./images/about/value.png" class="w-20 h-20 mb-4 inline-block p-2 rounded-md""> </img>
-        <h3 class=" text-2xl font-bold mb-2 text-sky-700 font-secondary">Values</h3>
-          <p>
-          <ul class="font-secondary">
-            <li>- Concern for the patient</li>
-            <li>- Transparency</li>
-            <li>- Respect to the patient</li>
-            <li>- Confidentiality</li>
-            <li>- Ethics</li>
-            <li>- Integrity</li>
-          </ul>
-          </p>
-        </div>
-      </div>
+      </section>
+
 
       <p
         class="text-center text-sky-800 text-3xl md:text-4xl lg:text-5xl tracking-[2px] font-primary font-semibold mt-20">
@@ -411,7 +454,7 @@
   <my-footer></my-footer>
 
   <script src="./script.js"></script>
-   <script>
+  <script>
     // Disable right-click
     document.addEventListener('contextmenu', function (e) {
       e.preventDefault();
