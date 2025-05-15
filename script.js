@@ -16,7 +16,7 @@ function closeMenu(){
 class MyHeader extends HTMLElement{
     connectedCallback(){
         this.innerHTML=`
-        <nav class="w-full fixed px-5 xl:px-[6%] py-2 flex items-center justify-between z-50 bg-white shadow-[0px_4px_6px_0px_rgba(59,_130,_246,_0.5)]">
+        <nav class="w-full fixed px-5 xl:px-[6%] py-2 flex items-center justify-between z-50 bg-white shadow-xl">
 
     <a href="./index.html"><img src="./images/pradhan-nabh-logo.png" alt="Pradhan Eye Hospital Logo"
         class="w-80 p-2 bg-white rounded cursor-pointer">
