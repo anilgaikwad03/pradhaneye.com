@@ -19,15 +19,25 @@
   <link rel="stylesheet" href="./style.css">
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="./tailwind.config.js"></script>
+  <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1004449508456421"
+     crossorigin="anonymous">
+    </script>
 </head>
 
 <body class="overflow-x-hidden overflow-y-scroll selection:bg-red-400 selection:text-primary">
   <my-header></my-header>
+  
   <ul id="sideMenu"
-    class="flex xl:hidden flex-col py-20 px-10 gap-8 fixed -right-64 top-0 bottom-0 w-64 z-50 text-lg tracking-[2px] font-primary items-center h-screen bg-white transition duration-500">
-    <div class="absolute right-6 top-6" onclick="closeMenu()">
-      <img src="./images/close-black.png" alt="" class="w-6 cursor-pointer">
-    </div>
+  class="flex xl:hidden flex-col justify-between py-20 px-10 gap-8 fixed -right-64 top-0 bottom-0 w-64 z-50 text-lg tracking-[2px] font-primary items-center h-screen bg-white transition duration-500">
+
+  <!-- Close button -->
+  <div class="absolute right-6 top-6" onclick="closeMenu()">
+    <img src="./images/close-black.png" alt="Close menu" class="w-6 cursor-pointer">
+  </div>
+
+  <!-- Navigation links -->
+  <nav class="flex flex-col items-center gap-6 w-full">
     <li><a href="./index.html" onclick="closeMenu()">Home</a></li>
     <li><a href="./about.html" onclick="closeMenu()">About</a></li>
     <li><a href="./doctors.html" onclick="closeMenu()">Doctors</a></li>
@@ -36,8 +46,20 @@
     <li><a href="./insurance.html" onclick="closeMenu()">Insurance</a></li>
     <li><a href="./testimonials.html" onclick="closeMenu()">Testimonials</a></li>
     <li><a href="./contact.html" onclick="closeMenu()">Contact</a></li>
-  </ul>
+  </nav>
 
+  <!-- Contact information -->
+  <div class="text-center text-sm font-secondary text-gray-700 mt-10">
+    <img src="./images/pradhan-nabh-logo.png" alt="Pradhan Eye Hospital Logo" class="w-48 mb-2">
+    50, Railway Lines<br>
+    Dr. M.G. Pradhan Marg<br>
+    Solapur - 413001<br>
+    <a href="mailto:pradhaneye@gmail.com" class="block mt-2 text-blue-600 underline">pradhaneye@gmail.com</a>
+    <a href="https://wa.me/919881004304" target="_blank" class="block mt-1 text-green-600 underline">
+      WhatsApp:9881004304
+    </a>
+  </div>
+</ul>
 
   <section id="doctors" class="relative  scroll-mt-10 h-full py-20">
     <div class="container mx-auto p-2 my-10">
