@@ -79,7 +79,6 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="./tailwind.config.js" defer></script>
 
-
 <body class="overflow-x-hidden overflow-y-scroll selection:bg-red-400 selection:text-primary" oncontextmenu="return false">
   <my-header></my-header>
   
@@ -489,12 +488,49 @@
             e.preventDefault();
         }
     });
+
+    // Show modal after page loads
+window.addEventListener("load", function () {
+  const modal = document.getElementById("discountModal");
+  const closeBtn = document.getElementById("closeModal");
+
+  // Show modal
+  modal.classList.remove("hidden");
+
+  // Close modal on button click
+  closeBtn.addEventListener("click", () => {
+    modal.classList.add("hidden");
+  });
+
+  // Close modal when clicking outside content
+  modal.addEventListener("click", (e) => {
+    if (e.target === modal) {
+      modal.classList.add("hidden");
+    }
+  });
+});
+
   </script>
 
 
   <!-- <div class="gtranslate_wrapper"></div>
 <script>window.gtranslateSettings = {"default_language":"en","detect_browser_language":true,"languages":["en","mr","kn","hi"],"wrapper_selector":".gtranslate_wrapper","switcher_horizontal_position":"right"}</script>
 <script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer></script> -->
-  
+
+<!-- Discount Offer Modal -->
+<div id="discountModal" class="fixed inset-0 flex items-center justify-center bg-black/50 z-[9999]">
+  <div class="relative bg-white rounded-lg shadow-lg max-w-md w-[90%] overflow-hidden">
+    <!-- Close Button -->
+    <button id="closeModal" class="absolute top-2 right-2 text-white bg-red-500 hover:bg-red-600 rounded-full w-8 h-8 flex items-center justify-center text-lg">&times;</button>
+
+    <!-- Offer Image -->
+    <img src="./images/LasikCamp2025English.jpeg" alt="20% Discount Offer" class="w-full h-auto object-cover">
+
+    <!-- Optional: Text below image -->
+    <div class="p-4 text-center">
+      <h2 class="text-lg font-semibold text-sky-800">Freedom from glasses at 20% off!</h2>
+    </div>
+  </div>
+</div>
 </body>
 </html>
