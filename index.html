@@ -395,6 +395,39 @@ html {
     color: var(--primary);
     margin-bottom: 16px;
 }
+    .luxury-header .main-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background: linear-gradient(135deg, #0c4a6e, #0ea5e9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.luxury-header .sub-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    letter-spacing: 4px;
+    color: #0369a1;
+}
+.luxury-header .tagline {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #0c4a6e;
+}
+.luxury-header .badge-text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.luxury-header .trust-badge {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
 </style>
 
   <!-- Fonts and CSS -->
@@ -403,6 +436,7 @@ html {
   <link
     href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Kalam:wght@300;400;700&family=Outfit:wght@100..900&family=Tiro+Devanagari+Marathi:ital@0;1&display=swap"
     rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
@@ -548,18 +582,19 @@ html {
       <div class="items-center">
         <div class="max-lg:order-1 max-lg:text-center p-2">
           
-         <div class="text-center py-10 px-4 bg-gradient-to-br from-sky-50 via-white to-sky-50 rounded-2xl shadow-sm border border-sky-100">
+         <!-- Your Header HTML -->
+<div class="luxury-header text-center py-10 px-4 bg-gradient-to-br from-sky-50 via-white to-sky-50 rounded-2xl shadow-sm border border-sky-100">
   <!-- NABH Badge -->
-  <div class="inline-flex items-center gap-2 bg-sky-100 text-sky-700 px-4 py-1.5 rounded-full text-sm font-semibold uppercase tracking-wider mb-4">
+  <div class="inline-flex items-center gap-2 bg-sky-100 text-sky-700 px-4 py-1.5 rounded-full text-sm font-semibold uppercase tracking-wider mb-4 badge-text">
     <i class="fas fa-certificate text-sky-500"></i>
     NABH Accredited
   </div>
   
   <!-- Main Title -->
-  <h1 class="text-sky-700 text-3xl md:text-4xl lg:text-5xl tracking-[2px] font-primary font-bold">
+  <h1 class="main-title text-3xl md:text-4xl lg:text-5xl">
     Pradhan Eye Hospital
   </h1>
-  <h2 class="text-sky-600 text-xl md:text-2xl lg:text-3xl font-primary font-medium mt-1">
+  <h2 class="sub-title text-xl md:text-2xl lg:text-3xl mt-1">
     & Lasik Laser Center
   </h2>
   
@@ -570,20 +605,20 @@ html {
     <span class="h-0.5 w-16 bg-gradient-to-l from-transparent to-sky-300"></span>
   </div>
   
-  <!-- Subtitle -->
-  <p class="text-sky-600 text-sm md:text-base lg:text-lg font-secondary font-semibold uppercase tracking-[3px]">
+  <!-- Tagline -->
+  <p class="tagline text-sm md:text-base lg:text-lg">
     40+ Years of Excellence in Eye Care
   </p>
   
   <!-- Trust Badges -->
   <div class="flex flex-wrap justify-center gap-4 mt-5">
-    <span class="flex items-center gap-1.5 text-xs text-gray-600 bg-white px-3 py-1.5 rounded-full shadow-sm border border-gray-100">
+    <span class="trust-badge flex items-center gap-1.5 text-xs text-gray-600 bg-white px-3 py-1.5 rounded-full shadow-sm border border-gray-100">
       <i class="fas fa-check-circle text-green-500"></i> 40+ Years
     </span>
-    <span class="flex items-center gap-1.5 text-xs text-gray-600 bg-white px-3 py-1.5 rounded-full shadow-sm border border-gray-100">
+    <span class="trust-badge flex items-center gap-1.5 text-xs text-gray-600 bg-white px-3 py-1.5 rounded-full shadow-sm border border-gray-100">
       <i class="fas fa-check-circle text-green-500"></i> NABH Accredited
     </span>
-    <span class="flex items-center gap-1.5 text-xs text-gray-600 bg-white px-3 py-1.5 rounded-full shadow-sm border border-gray-100">
+    <span class="trust-badge flex items-center gap-1.5 text-xs text-gray-600 bg-white px-3 py-1.5 rounded-full shadow-sm border border-gray-100">
       <i class="fas fa-check-circle text-green-500"></i> Advanced Technology
     </span>
   </div>
